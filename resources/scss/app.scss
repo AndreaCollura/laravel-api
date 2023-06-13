@@ -1,0 +1,31 @@
+@use "./partials/variables" as *;
+
+$fa-font-path: "../fonts/webfonts" !default;
+
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+
+@import "~bootstrap/scss/bootstrap";
+
+body {
+    width: 100vw;
+    height: 100%;
+
+    .paginate {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+nav {
+    background-color: $light-grey;
+    .my-port-logo {
+        img {
+            width: 120px;
+            height: 45px;
+        }
+    }
+}
